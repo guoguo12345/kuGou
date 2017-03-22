@@ -1,0 +1,116 @@
+<!-- 导航 -->
+<nav>
+	<ul>
+		<li class='active'>推荐</li>
+		<li>排行</li>
+		<li>分类</li>
+		<li>歌手</li>
+		<li>MV</li>
+	</ul>
+</nav>
+<!-- section -->
+<section>
+	<div class='swiper-container' id='section-container'>
+		<div class='swiper-wrapper'>
+			<div class='swiper-slide'>
+			 <!-- 推荐页 -->
+				 <article>
+					<!-- 推荐页轮播 -->
+					 <div class='banner'>
+						<div class='swiper-container' id='banner-container'>
+							<div class='swiper-wrapper'>
+								<div class='swiper-slide'><a href="###">
+								<img src="images/1480909297444_.jpg"></a></div>
+								<div class='swiper-slide'><a href="###"><img src="images/1482312358874_.jpg"></a></div>
+								<div class='swiper-slide'><a href="###"><img src="images/1482482412398_.jpg"></a></div>
+								<div class='swiper-slide'><a href="###"><img src="images/1487865577092_.jpg"></a></div>
+								<div class='swiper-slide'><a href="###"><img src="images/1488182915745_.png"></a></div>
+								<div class='swiper-slide'><a href="###"><img src="images/1488637333255_.jpg"></a></div>
+								<div class='swiper-slide'><a href="###"><img src="images/1489029252230_.jpg"></a></div>
+								<div class='swiper-slide'><a href="###"><img src="images/1488182915745_.png"></a></div>
+							</div> 
+							  <!-- 如果需要分页器 -->
+							    <div class="swiper-pagination"></div>
+							    <!-- 如果需要滚动条 -->
+							    <div class="swiper-scrollbar"></div>
+						</div>
+					</div>
+					<!-- 每日新歌 -->
+				    <div class='newMusic'>
+						<h3>每日新歌</h3>
+					    <a href="#/detail"><img src='images/1466668022746_.jpg' alt='华语' /></a>
+						<p>华语新歌推荐</p>
+						<a href="###"><img src="images/1466668131470_.jpg" alt="日韩"></a>
+						<p>日韩新歌推荐</p>
+						<a href="###"><img src="images/1466668204339_.jpg" alt="欧美"></a>
+						<p>欧美新歌推荐</p>
+					</div> 
+					<!-- 歌单推荐 -->
+					<div class='menuMusic'>
+						<h3>歌单推荐</h3>
+						<ul>
+							<li><a href=""><img src="images/1489120133036_132026710_700.jpg" alt=""><b>3月10日每日最新单曲</b></a></li>
+							<li><a href=""><img src="images/1489112288608_.jpg" alt=""><b>酷我音乐调频</b></a></li>
+							<li><a href=""><img src="images/1489042709335_.jpg" alt=""><b>酷我音乐调频</b></a></li>
+						</ul>
+					</div>
+					<!-- 精彩节目 -->
+					<div class='program'>
+						<h3>精彩节目</h3>
+						<ul>
+							<li><a href="###"><img src="images/3158_autob.jpg" alt=""><b>酷我音乐调频</b></a></li>
+							<li><a href="###"><img src="images/3729_autob.jpg" alt=""><b>酷我音乐调频</b></a></li>
+							<li><a href="###"><img src="images/2915_autob.jpg" alt=""><b>酷我音乐调频</b></a></li>
+						</ul>
+					</div>
+					<!-- 热门MV -->
+					<div class='hotMusic'>
+						<h3>热门MV</h3>
+						<ul>
+							<li><a href="###"><img src="images/1489112488592_.jpg" alt=""><b>高颜值!中华风萌妹给你比心!</b></a></li>
+							<li><a href="###"><img src="images/1489112526976_.jpg" alt=""><b>捶你胸口!英雄联盟版来撸!</b></a></li>
+						</ul>
+					</div>
+				</article>
+			</div>
+			<div class='swiper-slide'>
+				<!-- 排行 -->
+				<div class='chart'>
+					<div ng-repeat='list in lists'>
+						<a href="#/main/{{list.id}}"><img ng-src='{{list.img}}' alt=""></a>
+						<ul>
+							<h3>{{list.title}}</h3>
+							<li>1 <span> {{list.music1}}</span></li>
+							<li>2 <span> {{list.music2}}</span></li>
+							<li>3 <span> {{list.music3}}</span></li>
+						</ul>
+						<a href="#/main/{{list.id}}">&gt;</a>
+					</div>
+					<!-- <div>
+						<a href=""><img src="images/1444901415971_.jpg" alt=""></a>
+						<ul>
+							<h3>酷我热歌榜</h3>
+							<li>1 <span> dadf</span></li>
+							<li>2 <span> afdaf</span></li>
+							<li>3 <span> fdaf</span></li>
+						</ul>
+						<a href="">&gt;</a>
+					</div>
+					<div>
+						<a href=""><img src="images/1444901415971_.jpg" alt=""></a>
+						<ul>
+							<h3>酷我热歌榜</h3>
+							<li>1 <span> dadf</span></li>
+							<li>2 <span> afdaf</span></li>
+							<li>3 <span> fdaf</span></li>
+						</ul>
+						<a href="">&gt;</a>
+					</div> -->
+				</div>
+			</div>
+			<div class='swiper-slide'>分类</div>
+			<div class='swiper-slide'>歌手</div>
+			<div class='swiper-slide'>MV</div>
+		</div>
+	</div>
+</section>

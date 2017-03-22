@@ -1,0 +1,16 @@
+<div id='register'>
+	<ul>
+		<form name='registerForm'> 
+			<li><span>手机号</span><input type='text' placeholder='  请输入11位手机号码' class='phone' name='phone' ng-model='phone' 
+				required ng-minlength='11' ng-maxlength='11'
+				ng-class='{"error":registerForm.phone.$invalid && registerForm.phone.$touched}'/></li>
+			<div ng-if='registerForm.phone.$invalid && registerForm.phone.$touched'>电话号码不合法</div>
+			<div>{{data}}</div>
+			<li><span>昵 称</span><input type='text' name='nickName' class='nick' ng-model='nickName' required /></li>
+			<li><span>设置密码</span><input type='password' name='password' class='password' ng-model='password' required /></li>
+			<li><span>确定密码</span><input type='password' required /></li>
+			<li><span>手机验证码</span><input type='text' required /><b>获取验证码</b></li>
+			<li><span></span><input type='button' ng-click='register()' value='立即注册' /></li>
+		</form>
+	</ul>
+</div>

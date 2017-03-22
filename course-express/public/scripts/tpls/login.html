@@ -1,0 +1,14 @@
+<div id='login'>
+	<ul>
+		<form name="loginForm">
+			<li><span>账号</span><input type='text' placeholder='  请输入11位手机号码' class='phone' ng-model='phone' name='phone' required 
+			ng-minlength='11' ng-maxlength='11'
+			ng-class='{"error":loginForm.phone.$invalid && loginForm.phone.$touched}' /></li>
+			<div ng-if='loginForm.phone.$invalid && loginForm.phone.$touched'>电话号码不合法</div>
+			<li><span>密码</span><input type='password' ng-model='password'  class='password' name='password' required /></li>
+			<div>{{data}}</div>
+			<li><span><label><input type='checkbox'> <i>自动登录</i></label></span><a href='#/register'> 免费注册</a></li>
+			<li><span></span><input type='button' value='登录' ng-click='save()' /></li>
+		</form>
+	</ul>
+</div>

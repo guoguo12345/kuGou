@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app='myApp'>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>酷我音乐推荐页</title>
+	<link rel="stylesheet" href="images/iconfont/iconfont.css">
+	<link rel="stylesheet" href="styles/index.css">
+	<link rel="stylesheet" href="styles/libs/swiper-3.3.1.min.css">
+</head>
+<body>
+	<div class='container'>
+		<!-- 头部 -->
+		<header>
+			<ul>
+				<li><a class='iconfont' href="#/search">&#xe686;</a></li>
+				<li>
+					<a href='#/main'></a>
+				</li>
+				<li>
+					<a href="#/login" class='login'>登录</a>
+					<a href="#/register" class='register'>注册</a>
+					<span></span>
+				</li>
+			</ul>
+		</header>
+		<!-- 导航 and section -->
+		<div id='route'>
+			<ng-view></ng-view>
+		</div>
+
+		<footer>
+			<div>下载APP</div>
+		</footer>
+	</div>
+	<script src='scripts/libs/zepto.js'></script>
+	<script src='scripts/libs/swiper-3.3.1.jquery.min.js'></script>
+	<script src='scripts/libs/touch.js'></script>
+	<script src='scripts/libs/angular.js'></script>
+	<script src='scripts/libs/angular-route.min.js'></script>
+	<script src='scripts/index.js'></script>
+</body>
+</html>
